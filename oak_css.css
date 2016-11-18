@@ -102,12 +102,21 @@ h2 {
   height: 350px;
 }
 
+#history p {
+  margin-bottom: 8.33%;
+}
+
 #whyus, #ourwork {
   margin-top:8.33%;
   margin-bottom:8.33%;
   padding-left:10px;
 }
 
+#history header,
+#whyus header,
+#ourwork header {
+  font-size: 14px;
+}
 
 /*Portfolio Nav Bar*/
 #ourwork-nav {
@@ -335,7 +344,7 @@ footer {
 
 
 
-/*Responsive Grids for large screens*/
+/*---------------Layout for Large Screens---------------*/
 
 * {
   box-sizing: border-box;
@@ -356,7 +365,7 @@ footer {
 
 
 [class*="col-"] {
-    float: left;
+    float: left !important;
     padding: 10px;
 }
 
@@ -367,17 +376,9 @@ footer {
     display: table;
 }
 
+/*--------------Layout for Small Screens-------------*/
 @media screen and (max-width: 768px) {
 
-  html {
-    font-size: 18px;
-  }
-
-  .maincontainer {
-    padding: 0 20px 20px 20px;
-  }
-
-  .col-s-0 {width: 0%;}
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -396,17 +397,47 @@ footer {
       padding: 5px;
   }
 
+  html {
+    font-size: 18px;
+  }
+
+  #history header,
+  #whyus header,
+  #ourwork header {
+  font-size: 20px;
+}
+
+  .maincontainer {
+    padding: 0 20px 20px 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  h2 {
+    margin-left: 20px;
+  }
+
+
   #ourwork-nav {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #nav-anchors a{
     margin-right: 10px;
   }
 
+  .portfolio {
+    width: 100%;
+    height:auto;
+    float:left;
+  }
+
   body footer {
-    font-size: 13px;
-    padding: 20px;
+    font-size: 14px;
+    padding: 16px;
   }
 
   #leftcol-footer, 
