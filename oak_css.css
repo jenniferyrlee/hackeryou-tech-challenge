@@ -367,6 +367,16 @@ footer {
     display: table;
 }
 
+.float-right {
+  float: right;
+}
+
+@media screen and (max-width: 1407px) {
+  .float-none-m {
+    float: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   html {
@@ -392,8 +402,11 @@ footer {
   .col-s-12 {width: 100%;}
 
   [class*="col-"] {
-      float: left;
-      padding: 5px;
+    padding: 5px;
+  }
+
+  .float-none-s {
+    float: none;
   }
 
   #ourwork-nav {
@@ -409,7 +422,7 @@ footer {
     padding: 20px;
   }
 
-  #leftcol-footer, 
+  #leftcol-footer,
   #midcol-footer,
   #rightcol-footer {
     padding-top:0;
