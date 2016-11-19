@@ -1,11 +1,3 @@
-/*@font-face {
-font-family: "Coco Gothic Regular";
-src: url("fonts/Coco-Gothic/Coco\ Gothic\ Regular.ttf") format("truetype");
-font-weight: normal;
-font-style: normal;
-}
-*/
-
 html {
   background-color: #FFF;
   color: #000; /*#d9d8d6;*/
@@ -156,6 +148,7 @@ h2 {
 
 /*End of Portfolio Nav Bar*/
 
+
 .portfolio {
   width: 100%;
   height:auto;
@@ -166,6 +159,7 @@ h2 {
   position: relative;
   float:left;
 }
+
 
 /*Overlay Hover Effect*/
 
@@ -207,6 +201,7 @@ h2 {
   opacity: 0.7;
 }
 /*End of Overlay Hover Effect*/
+
 
 /*Loader*/
 .loader {
@@ -343,7 +338,7 @@ footer {
 /*End of Footer*/
 
 
-
+/*Responsive Grid Layout*/
 /*---------------Layout for Large Screens---------------*/
 
 * {
@@ -365,7 +360,7 @@ footer {
 
 
 [class*="col-"] {
-    float: left !important;
+    float: left;
     padding: 10px;
 }
 
@@ -375,6 +370,7 @@ footer {
     clear: both;
     display: table;
 }
+
 
 /*--------------Layout for Small Screens-------------*/
 @media screen and (max-width: 768px) {
@@ -397,15 +393,26 @@ footer {
       padding: 5px;
   }
 
+  .row:before,
+  .row:after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .float-none-s {
+      float: none;
+  }
+
   html {
-    font-size: 18px;
+      font-size: 18px;
   }
 
   #history header,
   #whyus header,
   #ourwork header {
   font-size: 20px;
-}
+  }
 
   .maincontainer {
     padding: 0 20px 20px 20px;
@@ -432,8 +439,20 @@ footer {
   .portfolio {
     width: 100%;
     height:auto;
-    float:left;
   }
+
+ #clock {
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  position:relative;
+ }
+
+ form {
+  position: absolute;
+  top:36.5px;
+}
+
 
   body footer {
     font-size: 14px;
@@ -452,6 +471,6 @@ footer {
 }
 
 
-/*End of Responsive Grids*/
+/*End of Responsive Grid Layout*/
 
 
